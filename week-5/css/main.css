@@ -1,0 +1,160 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategray;
+}
+
+/*This is a CSS comment
+Shortcut for adding the comment control + / or Command * /
+*/
+h1 {
+  color: white;  
+}
+
+p{
+  background-color: lightblue;  
+}
+
+/* selecting multiple elements to add name styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  text-decoration: underline;  
+}
+
+/* selecting child elements */
+nav ul{
+   list-style: none;
+}
+
+/* selecting child elements multiple level */
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting HTML elements with name */
+.orange-link{
+    background: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+/* Selecting element with id value */
+#tow{
+   background-color: orange; 
+}
+
+/* Adding multiple class to an element */
+.large-text{
+    font-size: 20px;
+}
+
+.danger{
+    color: red;
+}
+
+/* Direct child selector */
+article p{
+  font-size: 24px;  
+}
+
+/* Adjacent sibling selector */
+
+h3+ul{
+    /* thickness style color */
+  border: 1px solid black;  
+}
+
+/* Attribute selector */
+[href="#tow"] {
+    font-weight: bold;
+}
+
+/* Using Pseudo classes 
+Styling navigation
+*/
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background: orange;
+    /* Blur spread */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position related selectors */
+aside ul li:first-child,
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* collapse table border into one */
+table{
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    /* hex colors value with 6 characters */
+    background-color: #d5836c;
+}
+
+/* Where n is 0,1,2 ... until number of elements*/
+table th:nth-child(n)
+table th:nth-child(n){
+/* hex colors value with 3 characters */
+/* #000000 = 000 = black = FFFFFF = FFF = White*/ 
+border: 1px solid #000;
+}
+
+/* 2n+1 if n is 0,1,2,3... then 2n+1  1,3,5,7... */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 
+Specificity: 0002 
+*/
+body footer {
+    background: orange;
+}
+
+/* 
+Specificity: 0001 
+*/
+footer {
+    background-color: aqua;
+}
+
+/* 
+Specificity: 0001 
+*/
+footer {
+    background-color: red;
+}
+
+/* 0010 */
+.site-footer {
+  background-color: cornflowerblue;
+}
+
+/* Specificity: 0011 */
+footer.site-footer {
+    background-color: teal;
+}
+
+/* 0011 */
+blockquote.large-text{
+    text-transform: uppercase;
+}
