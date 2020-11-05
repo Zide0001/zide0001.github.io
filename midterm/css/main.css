@@ -1,0 +1,70 @@
+
+  
+  h1 {
+    color: rgb(197, 233, 247);  
+  }
+  
+header{
+    background-color: rgb(63, 194, 199);
+}
+
+  p{
+    background-color: rgb(43, 173, 248);  
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(55, 77, 107);
+    background-color: rgb(74, 223, 228);
+  }
+  
+  h2,
+  h3,
+  h4,
+    text-decoration: underline;  
+  }
+  
+  nav ul{
+     list-style: none;
+  }
+  
+
+  nav ul a{
+      color: rgb(55, 182, 182);
+      text-decoration: none;
+  }
+  
+
+  .orange-link{
+      background: rgb(123, 224, 224);
+      color: rgb(0, 119, 255);
+      text-decoration: none;
+  }
+  
+
+  .large-text{
+      font-size: 20px;
+  }
+  
+  .danger{
+      color: red;
+  }
+  
+  article p{
+    font-size: 24px;  
+  }
+  
+  h3+ul{
+    border: 1px solid black;  
+  }
+  
+  [href="#tow"] {
+      font-weight: bold;
+  }
+  
+  nav ul a,
+  nav ul a:link,
+  nav ul a:visited{
+      background:rgb(63, 194, 199);
+      color: black;
+      box-shadow: -2px 2px 4px 2px rgb(58, 58, 58)
